@@ -799,7 +799,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (typingText) {
 
-        const text = "Hi, I'm Sandriii.";
+        const text = "Hi, I'm Sandrianto Siregar.";
 
         let index = 0;
 
