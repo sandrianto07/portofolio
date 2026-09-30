@@ -1,112 +1,216 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <meta
         name="description"
-        content="Bagas Sandrianto — Informatics Student, Web Developer & Graphic Designer."
+        content="Bagas Sandrianto — 21-year-old Informatics student at Universitas Nahdlatul Ulama Sunan Giri Bojonegoro, Web Developer & Graphic Designer."
     >
 
-    <meta name="theme-color" content="#0b0b0b">
+    <meta
+        name="author"
+        content="Bagas Sandrianto Siregar"
+    >
 
-    <title>Bagas — Informatics Student & Web Developer</title>
+    <meta
+        name="theme-color"
+        content="#090909"
+    >
 
-    <!-- =========================
-         GOOGLE FONTS
-    ========================== -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>
+        Sandronn — Informatics Student & Web Developer
+    </title>
+<link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
 
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
         rel="stylesheet"
     >
+<link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+<link
+        rel="stylesheet"
+        href="assets/css/style.css"
+    >
 
-    <!-- =========================
-         CSS
-    ========================== -->
-    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-
 <body>
+<div class="page-loader">
 
-    <!-- =========================
-         PAGE LOADER
-    ========================== -->
-    <div class="page-loader">
         <div class="loader-inner">
-            <span class="loader-logo">SANDRONN<span>.</span></span>
+
+            <span class="loader-logo">
+                SANDRONN<span>.</span>
+            </span>
+
             <div class="loader-line">
                 <span></span>
             </div>
+
         </div>
+
     </div>
-
-
-    <!-- =========================
-         CURSOR
-    ========================== -->
-    <div class="cursor-dot"></div>
+<div class="cursor-dot"></div>
     <div class="cursor-outline"></div>
-
-
-    <!-- =========================
-         SCROLL PROGRESS
-    ========================== -->
-    <div class="scroll-progress"></div>
-
-
-    <!-- =========================
-         NAVBAR
-    ========================== -->
-    <header class="navbar">
+<div class="scroll-progress"></div>
+<header class="navbar">
 
         <div class="container navbar-inner">
-
-            <a href="#home" class="logo magnetic">
+<a
+                href="#home"
+                class="logo magnetic"
+                aria-label="Sandronn Home"
+            >
                 SANDRONN<span>.</span>
             </a>
+<nav
+                class="nav-menu"
+                aria-label="Main navigation"
+            >
 
-
-            <nav class="nav-menu">
-
-                <a href="#home" class="nav-link active">
+                <a
+                    href="#home"
+                    class="nav-link active"
+                    data-i18n="nav.home"
+                >
                     Home
                 </a>
 
-                <a href="#about" class="nav-link">
+                <a
+                    href="#about"
+                    class="nav-link"
+                    data-i18n="nav.about"
+                >
                     About
                 </a>
 
-                <a href="#work" class="nav-link">
+                <a
+                    href="#work"
+                    class="nav-link"
+                    data-i18n="nav.work"
+                >
                     Work
                 </a>
 
-                <a href="#contact" class="nav-link">
+                <a
+                    href="#contact"
+                    class="nav-link"
+                    data-i18n="nav.contact"
+                >
                     Contact
                 </a>
 
             </nav>
+<div class="navbar-actions">
+<div class="language-switcher">
 
+                    <button
+                        class="language-toggle"
+                        id="languageToggle"
+                        type="button"
+                        aria-label="Choose language"
+                        aria-expanded="false"
+                        aria-haspopup="true"
+                    >
 
-            <a href="#contact" class="nav-button magnetic">
+                        <i class="bi bi-translate"></i>
 
-                <span>Let's Talk</span>
+                        <span id="currentLanguage">
+                            EN
+                        </span>
 
-                <span class="arrow">↗</span>
+                        <i class="bi bi-chevron-down language-chevron"></i>
 
-            </a>
+                    </button>
 
+                    <div
+                        class="language-menu"
+                        id="languageMenu"
+                        role="menu"
+                    >
 
-            <!-- MOBILE MENU -->
-            <button
+                        <button
+                            type="button"
+                            class="language-option active"
+                            data-language="en"
+                            role="menuitem"
+                        >
+
+                            <span class="language-flag">
+                                🇬🇧
+                            </span>
+
+                            <span>
+                                English
+                            </span>
+
+                            <i class="bi bi-check2"></i>
+
+                        </button>
+
+                        <button
+                            type="button"
+                            class="language-option"
+                            data-language="id"
+                            role="menuitem"
+                        >
+
+                            <span class="language-flag">
+                                🇮🇩
+                            </span>
+
+                            <span>
+                                Indonesia
+                            </span>
+
+                            <i class="bi bi-check2"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+<a
+                    href="https://wa.me/628817020813"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="nav-button magnetic"
+                >
+
+                    <span data-i18n="nav.talk">
+                        Let's Talk
+                    </span>
+
+                    <i class="bi bi-arrow-up-right arrow"></i>
+
+                </a>
+
+            </div>
+<button
                 class="menu-toggle"
                 type="button"
                 aria-label="Open navigation"
+                aria-expanded="false"
             >
 
                 <span></span>
@@ -115,102 +219,152 @@
             </button>
 
         </div>
+<div class="mobile-menu">
 
+            <a
+                href="#home"
+                data-i18n="nav.home"
+            >
+                <i class="bi bi-house"></i>
+                <span>
+                    Home
+                </span>
+            </a>
 
-        <!-- MOBILE NAVIGATION -->
-        <div class="mobile-menu">
+            <a
+                href="#about"
+                data-i18n="nav.about"
+            >
+                <i class="bi bi-person"></i>
+                <span>
+                    About
+                </span>
+            </a>
 
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#work">Work</a>
-            <a href="#contact">Contact</a>
+            <a
+                href="#work"
+                data-i18n="nav.work"
+            >
+                <i class="bi bi-grid"></i>
+                <span>
+                    Work
+                </span>
+            </a>
+
+            <a
+                href="#contact"
+                data-i18n="nav.contact"
+            >
+                <i class="bi bi-chat-dots"></i>
+                <span>
+                    Contact
+                </span>
+            </a>
+<div class="mobile-language">
+
+                <span
+                    class="mobile-language-label"
+                    data-i18n="language.label"
+                >
+                    Language
+                </span>
+
+                <div class="mobile-language-options">
+
+                    <button
+                        type="button"
+                        class="mobile-language-option active"
+                        data-language="en"
+                    >
+                        🇬🇧
+                        English
+                    </button>
+
+                    <button
+                        type="button"
+                        class="mobile-language-option"
+                        data-language="id"
+                    >
+                        🇮🇩
+                        Indonesia
+                    </button>
+
+                </div>
+
+            </div>
 
         </div>
 
     </header>
-
-
-    <!-- =========================
-         MAIN
-    ========================== -->
-    <main>
-
-
-        <!-- =========================
-             HERO
-        ========================== -->
-        <section class="hero" id="home">
-
-            <!-- Background decorations -->
-            <div class="hero-grid"></div>
+<main>
+<section
+            class="hero"
+            id="home"
+        >
+<div class="hero-grid"></div>
 
             <div class="hero-glow hero-glow-one"></div>
             <div class="hero-glow hero-glow-two"></div>
 
-
             <div class="container hero-content">
-
-
-                <!-- =====================
-                     HERO TEXT
-                ====================== -->
-                <div class="hero-text">
-
-
-                    <div
+<div class="hero-text">
+<div
                         class="hero-label reveal"
                         data-delay="100"
                     >
 
                         <span class="status-dot"></span>
 
-                        <span>
+                        <span data-i18n="hero.label">
                             BUILDING WITH CODE & CREATIVITY
                         </span>
 
                     </div>
-
-                    <h1 class="hero-title">
+<h1 class="hero-title">
 
                         <span
                             class="title-line typing-line reveal"
                             data-delay="200"
                         >
-                            <span id="typing-text"></span>
-                            <span class="typing-cursor">|</span>
+
+                            <span
+                                id="typing-text"
+                                data-i18n="hero.title"
+                            ></span>
+
+                            <span class="typing-cursor">
+                                |
+                            </span>
+
                         </span>
 
                     </h1>
-
-                    <h2
+<h2
                         class="hero-subtitle reveal"
                         data-delay="450"
                     >
 
-                        Informatics Student
+                        <span data-i18n="hero.subtitle">
+                            Informatics Student
+                        </span>
 
                         <br>
 
-                        <strong>
+                        <strong data-i18n="hero.subtitleStrong">
                             & Web Developer.
                         </strong>
 
                     </h2>
-
-
-                    <p
+<p
                         class="hero-description reveal"
                         data-delay="550"
+                        data-i18n="hero.description"
                     >
-
                         I enjoy building websites, exploring technology,
                         and turning ideas into meaningful digital
                         experiences through code and design.
-
                     </p>
-
-
-                    <div
+<div
                         class="hero-actions reveal"
                         data-delay="650"
                     >
@@ -220,27 +374,29 @@
                             class="btn btn-primary magnetic"
                         >
 
-                            <span>View My Work</span>
+                            <span data-i18n="hero.viewWork">
+                                View My Work
+                            </span>
 
-                            <span class="btn-arrow">↗</span>
+                            <i class="bi bi-arrow-up-right btn-arrow"></i>
 
                         </a>
-
 
                         <a
                             href="#about"
                             class="btn btn-secondary magnetic"
                         >
 
-                            <span>Get to Know Me</span>
+                            <span data-i18n="hero.aboutMe">
+                                Get to Know Me
+                            </span>
+
+                            <i class="bi bi-arrow-down"></i>
 
                         </a>
 
                     </div>
-
-
-                    <!-- Mini info -->
-                    <div
+<div
                         class="hero-meta reveal"
                         data-delay="750"
                     >
@@ -251,15 +407,16 @@
                                 01
                             </span>
 
-                            <span class="meta-text">
+                            <span
+                                class="meta-text"
+                                data-i18n="hero.web"
+                            >
                                 WEB DEVELOPMENT
                             </span>
 
                         </div>
 
-
                         <div class="meta-divider"></div>
-
 
                         <div class="hero-meta-item">
 
@@ -267,7 +424,10 @@
                                 02
                             </span>
 
-                            <span class="meta-text">
+                            <span
+                                class="meta-text"
+                                data-i18n="hero.design"
+                            >
                                 GRAPHIC DESIGN
                             </span>
 
@@ -276,12 +436,7 @@
                     </div>
 
                 </div>
-
-
-                <!-- =====================
-                     HERO VISUAL
-                ====================== -->
-                <div
+<div
                     class="hero-visual reveal"
                     data-delay="350"
                 >
@@ -289,15 +444,12 @@
                     <div class="visual-orbit orbit-one"></div>
                     <div class="visual-orbit orbit-two"></div>
 
-
                     <div
                         class="image-wrapper"
                         data-parallax
                     >
 
-                        <!-- Decorative background -->
                         <div class="image-backdrop"></div>
-
 
                         <div class="image-placeholder">
 
@@ -309,33 +461,25 @@
                             <div class="image-overlay"></div>
 
                         </div>
-
-
-                        <!-- Floating number -->
-                        <div class="visual-number">
-
+<div class="visual-number">
                             <span>01</span>
-
                         </div>
-
-
-                        <!-- Floating tag -->
-                        <div class="visual-tag">
+<div class="visual-tag">
 
                             <span class="tag-number">
                                 01
                             </span>
 
-                            <span class="tag-title">
+                            <span
+                                class="tag-title"
+                                data-i18n="hero.visualTag"
+                            >
                                 WEB & DESIGN
                             </span>
 
                         </div>
-
-
-                        <!-- Decorative plus -->
-                        <div class="visual-plus">
-                            +
+<div class="visual-plus">
+                            <i class="bi bi-plus-lg"></i>
                         </div>
 
                     </div>
@@ -343,119 +487,102 @@
                 </div>
 
             </div>
-
-
-            <!-- =====================
-                 SCROLL INDICATOR
-            ====================== -->
-            <a
+<a
                 href="#about"
                 class="scroll-indicator"
             >
 
-                <span>
+                <span data-i18n="hero.scroll">
                     Scroll to explore
                 </span>
 
                 <span class="scroll-line"></span>
 
-                <span class="scroll-arrow">
-                    ↓
-                </span>
+                <i class="bi bi-arrow-down scroll-arrow"></i>
 
             </a>
 
-
         </section>
-
-
-        <!-- =========================
-             ABOUT
-        ========================== -->
-        <section
+<section
             class="about section"
             id="about"
         >
 
             <div class="container">
-
-
-                <div
-                    class="section-heading reveal"
-                >
+<div class="section-heading reveal">
 
                     <span class="section-number">
                         01
                     </span>
 
-                    <span class="section-title">
+                    <span
+                        class="section-title"
+                        data-i18n="about.section"
+                    >
                         About Me
                     </span>
 
                 </div>
-
-
-                <div class="about-content">
-
-
-                    <div class="about-main reveal">
+<div class="about-content">
+<div class="about-main reveal">
 
                         <h2>
 
-                            Turning ideas into
+                            <span data-i18n="about.heading">
+                                Turning ideas into
+                            </span>
 
-                            <span>
+                            <span data-i18n="about.headingHighlight">
                                 digital experiences.
                             </span>
 
                         </h2>
 
                     </div>
-
-
-                    <div
+<div
                         class="about-description reveal"
                         data-delay="150"
                     >
 
-                        <p>
-
-                            I'm an Informatics student who enjoys
-                            building websites and creating visual
-                            designs.
-
+                        <p data-i18n="about.paragraph1">
+                            I'm a 21-year-old Informatics student at
+                            Universitas Nahdlatul Ulama Sunan Giri
+                            Bojonegoro, currently in my 7th semester.
                         </p>
 
-                        <p>
-
-                            I like combining technology and creativity
-                            to create useful, functional, and engaging
-                            digital products.
-
+                        <p data-i18n="about.paragraph2">
+                            I have a strong interest in web development,
+                            graphic design, and digital technology. I enjoy
+                            turning ideas into functional websites and
+                            creating visual designs that are both simple
+                            and engaging.
                         </p>
 
+                        <p data-i18n="about.paragraph3">
+                            Through academic projects, personal projects,
+                            and real-world experience, I'm continuously
+                            learning and improving my skills while exploring
+                            new technologies and creative possibilities.
+                        </p>
 
                         <a
                             href="#contact"
                             class="text-link"
                         >
 
-                            More about me
+                            <span data-i18n="about.more">
+                                More about me
+                            </span>
 
-                            <span>↗</span>
+                            <i class="bi bi-arrow-up-right"></i>
 
                         </a>
 
                     </div>
 
                 </div>
-
-
-                <!-- About cards -->
-                <div class="about-cards">
-
-
-                    <article
+<div class="about-cards">
+<article
                         class="about-card reveal"
                         data-delay="100"
                     >
@@ -465,22 +592,21 @@
                         </span>
 
                         <div class="card-icon">
-                            &lt;/&gt;
+                            <i class="bi bi-code-slash"></i>
                         </div>
 
-                        <h3>
+                        <h3 data-i18n="about.web.title">
                             Web Development
                         </h3>
 
-                        <p>
-                            Building functional and responsive
-                            websites with clean and practical code.
+                        <p data-i18n="about.web.description">
+                            Developing responsive and functional websites
+                            with a focus on clean, practical, and
+                            user-friendly experiences.
                         </p>
 
                     </article>
-
-
-                    <article
+<article
                         class="about-card reveal"
                         data-delay="200"
                     >
@@ -490,22 +616,21 @@
                         </span>
 
                         <div class="card-icon">
-                            ✦
+                            <i class="bi bi-palette"></i>
                         </div>
 
-                        <h3>
+                        <h3 data-i18n="about.design.title">
                             Graphic Design
                         </h3>
 
-                        <p>
-                            Creating visual content that communicates
-                            ideas through composition and design.
+                        <p data-i18n="about.design.description">
+                            Creating visual content, layouts, and digital
+                            designs that communicate ideas through
+                            composition, creativity, and visual identity.
                         </p>
 
                     </article>
-
-
-                    <article
+<article
                         class="about-card reveal"
                         data-delay="300"
                     >
@@ -515,16 +640,17 @@
                         </span>
 
                         <div class="card-icon">
-                            ∞
+                            <i class="bi bi-stars"></i>
                         </div>
 
-                        <h3>
+                        <h3 data-i18n="about.learning.title">
                             Continuous Learning
                         </h3>
 
-                        <p>
-                            Exploring new technologies and continuously
-                            improving through real projects.
+                        <p data-i18n="about.learning.description">
+                            Continuously exploring new technologies,
+                            improving technical skills, and learning
+                            through academic and real-world projects.
                         </p>
 
                     </article>
@@ -534,20 +660,13 @@
             </div>
 
         </section>
-
-
-        <!-- =========================
-             WORK
-        ========================== -->
-        <section
+<section
             class="work section"
             id="work"
         >
 
             <div class="container">
-
-
-                <div class="section-top reveal">
+<div class="section-top reveal">
 
                     <div class="section-heading">
 
@@ -555,123 +674,171 @@
                             02
                         </span>
 
-                        <span class="section-title">
+                        <span
+                            class="section-title"
+                            data-i18n="work.section"
+                        >
                             Selected Work
                         </span>
 
                     </div>
 
-
-                    <p class="section-intro">
-
+                    <p
+                        class="section-intro"
+                        data-i18n="work.intro"
+                    >
                         A collection of things I've built,
                         designed, and explored.
-
                     </p>
 
                 </div>
-
-
-                <!-- Work placeholder -->
-                <div class="work-grid">
-
-                    <article
-                        class="work-card work-card-large reveal"
-                        data-delay="100"
-                    >
-                        <div class="work-image">
-                            <img
-                                src="assets/img/siakad.png"
-                                alt="SIAKAD - Sistem Informasi Akademik"
-                            >
-
-                            <div class="work-overlay"></div>
-                        </div>
-
-                        <div class="work-info">
-                            <div>
-                                <span class="work-category">
-                                    WEB DEVELOPMENT
-                                </span>
-
-                                <h3>
-                                    Sistem Informasi Akademik
-                                </h3>
-                            </div>
-
-                            <span class="work-arrow">
-                                ↗
-                            </span>
-                        </div>
-                    </article>
-
-
-                    <article
-                        class="work-card reveal"
-                        data-delay="200"
-                    >
-                        <div class="work-image">
-                            <img
-                                src="assets/img/psb.png"
-                                alt="PSB - Penerimaan Santri Baru"
-                            >
-
-                            <div class="work-overlay"></div>
-                        </div>
-
-                        <div class="work-info">
-                            <div>
-                                <span class="work-category">
-                                    WEB DEVELOPMENT
-                                </span>
-
-                                <h3>
-                                    Penerimaan Santri Baru
-                                </h3>
-                            </div>
-
-                            <span class="work-arrow">
-                                ↗
-                            </span>
-                        </div>
-                    </article>
-
-
-                    <article
-                        class="work-card reveal"
-                        data-delay="300"
-                    >
-                        <div class="work-image">
-                            <img
-                                src="assets/img/design.png"
-                                alt="Graphic Design - Poster dan Social Media"
-                            >
-
-                            <div class="work-overlay"></div>
-                        </div>
-
-                        <div class="work-info">
-                            <div>
-                                <span class="work-category">
-                                    GRAPHIC DESIGN
-                                </span>
-
-                                <h3>
-                                    Poster & Social Media
-                                </h3>
-                            </div>
-
-                            <span class="work-arrow">
-                                ↗
-                            </span>
-                        </div>
-                    </article>
-
+<div class="work-grid">
+    <article
+        class="work-card work-card-large reveal"
+        data-delay="100"
+    >
+        <div class="work-image">
+            <img
+                src="assets/img/siakad.png"
+                alt="SIAKAD — Sistem Informasi Akademik"
+                loading="lazy"
+            >
+    
+            <div class="work-overlay"></div>
+    
+            <a
+                href="https://siakad.allathifiyyah.com"
+                class="work-image-icon"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Open SIAKAD project"
+            >
+                <i class="bi bi-arrow-up-right"></i>
+            </a>
+        </div>
+    
+        <div class="work-info">
+            <div>
+                <span
+                    class="work-category"
+                    data-i18n="work.siakad.category"
+                >
+                    WEB DEVELOPMENT
+                </span>
+    
+                <h3 data-i18n="work.siakad.title">
+                    Sistem Informasi Akademik
+                </h3>
+            </div>
+    
+            <a
+                href="https://siakad.allathifiyyah.com"
+                class="work-arrow"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Open SIAKAD project"
+            >
+                <i class="bi bi-arrow-up-right"></i>
+            </a>
+        </div>
+    </article>
+    
+    
+    <article
+        class="work-card reveal"
+        data-delay="200"
+    >
+        <div class="work-image">
+            <img
+                src="assets/img/psb.png"
+                alt="PSB — Penerimaan Santri Baru"
+                loading="lazy"
+            >
+    
+            <div class="work-overlay"></div>
+    
+            <a
+                href="https://psb.allathifiyyah.com"
+                class="work-image-icon"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Open PSB project"
+            >
+                <i class="bi bi-arrow-up-right"></i>
+            </a>
+        </div>
+    
+        <div class="work-info">
+            <div>
+                <span
+                    class="work-category"
+                    data-i18n="work.psb.category"
+                >
+                    WEB DEVELOPMENT
+                </span>
+    
+                <h3 data-i18n="work.psb.title">
+                    Penerimaan Santri Baru
+                </h3>
+            </div>
+    
+            <a
+                href="https://psb.allathifiyyah.com"
+                class="work-arrow"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Open PSB project"
+            >
+                <i class="bi bi-arrow-up-right"></i>
+            </a>
+        </div>
+    </article>
+    
+    
+    <article
+        class="work-card reveal"
+        data-delay="300"
+    >
+        <div class="work-image">
+            <img
+                src="assets/img/design.png"
+                alt="Graphic Design — Poster and Social Media"
+                loading="lazy"
+            >
+    
+            <div class="work-overlay"></div>
+    
+            <a
+                href="#"
+                class="work-image-icon"
+                aria-label="Open graphic design project"
+            >
+                <i class="bi bi-arrow-up-right"></i>
+            </a>
+        </div>
+    
+        <div class="work-info">
+            <div>
+                <span
+                    class="work-category"
+                    data-i18n="work.design.category"
+                >
+                    GRAPHIC DESIGN
+                </span>
+    
+                <h3 data-i18n="work.design.title">
+                    Poster & Social Media
+                </h3>
+            </div>
+    
+            <span class="work-arrow">
+                <i class="bi bi-arrow-up-right"></i>
+            </span>
+        </div>
+    </article>    
 
                 </div>
-
-
-                <div
+<div
                     class="work-more reveal"
                     data-delay="400"
                 >
@@ -681,9 +848,11 @@
                         class="text-link"
                     >
 
-                        Explore all projects
+                        <span data-i18n="work.more">
+                            Explore all projects
+                        </span>
 
-                        <span>↗</span>
+                        <i class="bi bi-arrow-up-right"></i>
 
                     </a>
 
@@ -692,106 +861,112 @@
             </div>
 
         </section>
-
-
-        <!-- =========================
-             CONTACT
-        ========================== -->
-        <section
+<section
             class="contact section"
             id="contact"
         >
 
             <div class="container">
 
-
                 <div class="contact-wrapper">
-
-
-                    <div
-                        class="section-heading reveal"
-                    >
+<div class="section-heading reveal">
 
                         <span class="section-number">
                             03
                         </span>
 
-                        <span class="section-title">
+                        <span
+                            class="section-title"
+                            data-i18n="contact.section"
+                        >
                             Contact
                         </span>
 
                     </div>
-
-
-                    <div class="contact-content">
-
+<div class="contact-content">
 
                         <p
                             class="contact-small reveal"
+                            data-i18n="contact.small"
                         >
                             HAVE AN IDEA OR JUST WANT TO SAY HI?
                         </p>
-
 
                         <h2
                             class="reveal"
                             data-delay="100"
                         >
 
-                            Let's build something
+                            <span data-i18n="contact.heading">
+                                Let's build something
+                            </span>
 
-                            <span>
+                            <span data-i18n="contact.headingHighlight">
                                 meaningful.
                             </span>
 
                         </h2>
-
-
-                        <a
+<a
                             href="mailto:sandriantosiregar07@gmail.com"
                             class="contact-email reveal magnetic"
                             data-delay="200"
                         >
 
-                            sandriantosiregar07@gmail.com
-
                             <span>
-                                ↗
+                                sandriantosiregar07@gmail.com
                             </span>
 
+                            <i class="bi bi-arrow-up-right"></i>
+
                         </a>
-
-
-                        <div
+<div
                             class="social-links reveal"
                             data-delay="300"
                         >
-
-                            <a
+<a
                                 href="https://www.instagram.com/saans.ajaaa/"
                                 class="social-link"
                                 target="_blank"
-                                rel="noopener"
+                                rel="noopener noreferrer"
+                                aria-label="Instagram"
                             >
-                                Instagram ↗
-                            </a>
 
-                            <a
+                                <i class="bi bi-instagram"></i>
+
+                                <span>
+                                    Instagram
+                                </span>
+
+                            </a>
+<a
                                 href="https://github.com/sandrianto07"
                                 class="social-link"
                                 target="_blank"
-                                rel="noopener"
+                                rel="noopener noreferrer"
+                                aria-label="GitHub"
                             >
-                                GitHub ↗
-                            </a>
 
-                            <a
+                                <i class="bi bi-github"></i>
+
+                                <span>
+                                    GitHub
+                                </span>
+
+                            </a>
+<a
                                 href="https://www.linkedin.com/in/bagas-sandrianto-5a135643b/"
                                 class="social-link"
                                 target="_blank"
-                                rel="noopener"
+                                rel="noopener noreferrer"
+                                aria-label="LinkedIn"
                             >
-                                LinkedIn ↗
+
+                                <i class="bi bi-linkedin"></i>
+
+                                <span>
+                                    LinkedIn
+                                </span>
+
                             </a>
 
                         </div>
@@ -805,45 +980,39 @@
         </section>
 
     </main>
-
-
-    <!-- =========================
-         FOOTER
-    ========================== -->
-    <footer class="footer">
+<footer class="footer">
 
         <div class="container footer-inner">
 
             <div class="footer-logo">
-                Sandronn<span>.</span>
+                SANDRONN<span>.</span>
             </div>
 
             <span>
                 © 2026 Bagas Sandrianto Siregar
             </span>
 
-            <span>
+            <span data-i18n="footer.text">
                 Designed & Built with code & creativity.
             </span>
 
         </div>
 
     </footer>
-
-    <!-- =========================
-        BACK TO TOP
-    ========================== -->
-    <button
+<button
         class="back-to-top"
         id="backToTop"
         type="button"
         aria-label="Back to top"
     >
-        <span>↑</span>
+
+        <i class="bi bi-arrow-up"></i>
+
     </button>
+<script src="assets/js/script.js"></script>
 
+    <script src="assets/js/language.js"></script>
 
-    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
