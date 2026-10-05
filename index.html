@@ -1,1020 +1,376 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Bagas Sandrianto — 21-year-old Informatics student at Universitas Nahdlatul Ulama Sunan Giri Bojonegoro, Web Developer &amp; Graphic Designer.">
+        <meta name="author" content="Bagas Sandrianto Siregar">
+        <meta name="theme-color" content="#090909">
+        <title>Sandronnn — Informatics Student &amp; Web Developer</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <script>
+        (() => {
+            const theme = localStorage.getItem("portfolio-theme");
+            document.documentElement.setAttribute("data-theme", theme === "light" ? "light" : "dark");
+        })();
+    </script>
+    <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="icon" type="image/x-icon" href="https://sandronn.vercel.app/favicon.ico">
+    </head>
 
-<head>
-
-    <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-    <meta
-        name="description"
-        content="Bagas Sandrianto — 21-year-old Informatics student at Universitas Nahdlatul Ulama Sunan Giri Bojonegoro, Web Developer & Graphic Designer."
-    >
-
-    <meta
-        name="author"
-        content="Bagas Sandrianto Siregar"
-    >
-
-    <meta
-        name="theme-color"
-        content="#090909"
-    >
-
-    <title>
-        Sandronnn — Informatics Student & Web Developer
-    </title>
-<link
-        rel="preconnect"
-        href="https://fonts.googleapis.com"
-    >
-
-    <link
-        rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin
-    >
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet"
-    >
-<link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    >
-<link
-        rel="stylesheet"
-        href="assets/css/style.css"
-    >
-
-    <link rel="icon" type="image/x-icon" href="https://sandronn.vercel.app/favicon.ico">
-
-</head>
-
-<body>
-<div class="page-loader">
-
-        <div class="loader-inner">
-
-            <span class="loader-logo">
-                SANDRONN<span>.</span>
-            </span>
-
-            <div class="loader-line">
-                <span></span>
+    <body>
+        <div class="page-loader">
+            <div class="loader-inner">
+                <span class="loader-logo">SANDRONN<span>.</span></span>
+                <div class="loader-line">
+                    <span></span>
+                </div>
             </div>
-
         </div>
-
-    </div>
-<div class="cursor-dot"></div>
-    <div class="cursor-outline"></div>
-<div class="scroll-progress"></div>
-<header class="navbar">
-
-        <div class="container navbar-inner">
-<a
-                href="#home"
-                class="logo magnetic"
-                aria-label="Sandronn Home"
-            >
-                SANDRONN<span>.</span>
-            </a>
-<nav
-                class="nav-menu"
-                aria-label="Main navigation"
-            >
-
-                <a
-                    href="#home"
-                    class="nav-link active"
-                    data-i18n="nav.home"
-                >
-                    Home
-                </a>
-
-                <a
-                    href="#about"
-                    class="nav-link"
-                    data-i18n="nav.about"
-                >
-                    About
-                </a>
-
-                <a
-                    href="#work"
-                    class="nav-link"
-                    data-i18n="nav.work"
-                >
-                    Work
-                </a>
-
-                <a
-                    href="#contact"
-                    class="nav-link"
-                    data-i18n="nav.contact"
-                >
-                    Contact
-                </a>
-
-            </nav>
-<div class="navbar-actions">
-<div class="language-switcher">
-
-                    <button
-                        class="language-toggle"
-                        id="languageToggle"
-                        type="button"
-                        aria-label="Choose language"
-                        aria-expanded="false"
-                        aria-haspopup="true"
-                    >
-
-                        <i class="bi bi-translate"></i>
-
-                        <span id="currentLanguage">
-                            EN
-                        </span>
-
-                        <i class="bi bi-chevron-down language-chevron"></i>
-
+        <div class="cursor-dot"></div>
+        <div class="cursor-outline"></div>
+        <div class="scroll-progress"></div>
+        <header class="navbar">
+            <div class="container navbar-inner">
+                <a href="#home" class="logo magnetic" aria-label="Sandronn Home">SANDRONN<span>.</span></a>
+                <nav class="nav-menu" aria-label="Main navigation">
+                    <a href="#home" class="nav-link active" data-i18n="nav.home">Home</a>
+                    <a href="#about" class="nav-link" data-i18n="nav.about">About</a>
+                    <a href="#work" class="nav-link" data-i18n="nav.work">Work</a>
+                    <a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
+                </nav>
+                <div class="navbar-actions">
+                    <div class="language-switcher">
+                        <button class="language-toggle" id="languageToggle" type="button" aria-label="Choose language" aria-expanded="false" aria-haspopup="true"><i class="bi bi-translate"></i><span id="currentLanguage">EN</span><i class="bi bi-chevron-down language-chevron"></i></button>
+                        <div class="language-menu" id="languageMenu" role="menu">
+                            <button type="button" class="language-option active" data-language="en" role="menuitem"><span class="language-flag">🇬🇧</span><span>English</span><i class="bi bi-check2"></i></button>
+                            <button type="button" class="language-option" data-language="id" role="menuitem"><span class="language-flag">🇮🇩</span><span>Indonesia</span><i class="bi bi-check2"></i></button>
+                        </div>
+                    </div>
+                    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light theme" aria-pressed="false">
+                        <i class="bi bi-sun-fill theme-icon-sun"></i>
+                        <i class="bi bi-moon-stars-fill theme-icon-moon"></i>
+                        <span class="theme-toggle-label">Theme</span>
                     </button>
-
-                    <div
-                        class="language-menu"
-                        id="languageMenu"
-                        role="menu"
-                    >
-
-                        <button
-                            type="button"
-                            class="language-option active"
-                            data-language="en"
-                            role="menuitem"
-                        >
-
-                            <span class="language-flag">
-                                🇬🇧
-                            </span>
-
-                            <span>
-                                English
-                            </span>
-
-                            <i class="bi bi-check2"></i>
-
-                        </button>
-
-                        <button
-                            type="button"
-                            class="language-option"
-                            data-language="id"
-                            role="menuitem"
-                        >
-
-                            <span class="language-flag">
-                                🇮🇩
-                            </span>
-
-                            <span>
-                                Indonesia
-                            </span>
-
-                            <i class="bi bi-check2"></i>
-
-                        </button>
-
-                    </div>
-
+                    <a href="https://wa.me/628817020813" target="_blank" rel="noopener noreferrer" class="nav-button magnetic"><span data-i18n="nav.talk">Let's Talk</span><i class="bi bi-arrow-up-right arrow"></i></a>
                 </div>
-<a
-                    href="https://wa.me/628817020813"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="nav-button magnetic"
-                >
-
-                    <span data-i18n="nav.talk">
-                        Let's Talk
-                    </span>
-
-                    <i class="bi bi-arrow-up-right arrow"></i>
-
-                </a>
-
+                <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
             </div>
-<button
-                class="menu-toggle"
-                type="button"
-                aria-label="Open navigation"
-                aria-expanded="false"
-            >
-
-                <span></span>
-                <span></span>
-
-            </button>
-
-        </div>
-<div class="mobile-menu">
-
-            <a
-                href="#home"
-                data-i18n="nav.home"
-            >
-                <i class="bi bi-house"></i>
-                <span>
-                    Home
-                </span>
-            </a>
-
-            <a
-                href="#about"
-                data-i18n="nav.about"
-            >
-                <i class="bi bi-person"></i>
-                <span>
-                    About
-                </span>
-            </a>
-
-            <a
-                href="#work"
-                data-i18n="nav.work"
-            >
-                <i class="bi bi-grid"></i>
-                <span>
-                    Work
-                </span>
-            </a>
-
-            <a
-                href="#contact"
-                data-i18n="nav.contact"
-            >
-                <i class="bi bi-chat-dots"></i>
-                <span>
-                    Contact
-                </span>
-            </a>
-<div class="mobile-language">
-
-                <span
-                    class="mobile-language-label"
-                    data-i18n="language.label"
-                >
-                    Language
-                </span>
-
-                <div class="mobile-language-options">
-
-                    <button
-                        type="button"
-                        class="mobile-language-option active"
-                        data-language="en"
-                    >
-                        🇬🇧
-                        English
+            <div class="mobile-menu">
+                <a href="#home" data-i18n="nav.home"><i class="bi bi-house"></i><span>Home</span></a>
+                <a href="#about" data-i18n="nav.about"><i class="bi bi-person"></i><span>About</span></a>
+                <a href="#work" data-i18n="nav.work"><i class="bi bi-grid"></i><span>Work</span></a>
+                <a href="#contact" data-i18n="nav.contact"><i class="bi bi-chat-dots"></i><span>Contact</span></a>
+                <div class="mobile-theme">
+                    <span class="mobile-language-label">Theme</span>
+                    <button class="mobile-theme-toggle" id="mobileThemeToggle" type="button" aria-label="Switch to light theme" aria-pressed="false">
+                        <span><i class="bi bi-sun-fill"></i> Light</span>
+                        <span><i class="bi bi-moon-stars-fill"></i> Dark</span>
                     </button>
-
-                    <button
-                        type="button"
-                        class="mobile-language-option"
-                        data-language="id"
-                    >
-                        🇮🇩
-                        Indonesia
-                    </button>
-
                 </div>
-
+                <div class="mobile-language">
+                    <span class="mobile-language-label" data-i18n="language.label">Language</span>
+                    <div class="mobile-language-options">
+                        <button type="button" class="mobile-language-option active" data-language="en">🇬🇧 English</button>
+                        <button type="button" class="mobile-language-option" data-language="id">🇮🇩 Indonesia</button>
+                    </div>
+                </div>
             </div>
-
-        </div>
-
-    </header>
-<main>
-<section
-            class="hero"
-            id="home"
-        >
-<div class="hero-grid"></div>
-
-            <div class="hero-glow hero-glow-one"></div>
-            <div class="hero-glow hero-glow-two"></div>
-
-            <div class="container hero-content">
-<div class="hero-text">
-<div
-                        class="hero-label reveal"
-                        data-delay="100"
-                    >
-
-                        <span class="status-dot"></span>
-
-                        <span data-i18n="hero.label">
-                            BUILDING WITH CODE & CREATIVITY
-                        </span>
-
-                    </div>
-<h1 class="hero-title">
-
-                        <span
-                            class="title-line typing-line reveal"
-                            data-delay="200"
-                        >
-
-                            <span
-                                id="typing-text"
-                                data-i18n="hero.title"
-                            ></span>
-
-                            <span class="typing-cursor">
-                                |
-                            </span>
-
-                        </span>
-
-                    </h1>
-<h2
-                        class="hero-subtitle reveal"
-                        data-delay="450"
-                    >
-
-                        <span data-i18n="hero.subtitle">
-                            Informatics Student
-                        </span>
-
-                        <br>
-
-                        <strong data-i18n="hero.subtitleStrong">
-                            & Web Developer.
-                        </strong>
-
-                    </h2>
-<p
-                        class="hero-description reveal"
-                        data-delay="550"
-                        data-i18n="hero.description"
-                    >
-                        I enjoy building websites, exploring technology,
-                        and turning ideas into meaningful digital
-                        experiences through code and design.
-                    </p>
-<div
-                        class="hero-actions reveal"
-                        data-delay="650"
-                    >
-
-                        <a
-                            href="#work"
-                            class="btn btn-primary magnetic"
-                        >
-
-                            <span data-i18n="hero.viewWork">
-                                View My Work
-                            </span>
-
-                            <i class="bi bi-arrow-up-right btn-arrow"></i>
-
-                        </a>
-
-                        <a
-                            href="#about"
-                            class="btn btn-secondary magnetic"
-                        >
-
-                            <span data-i18n="hero.aboutMe">
-                                Get to Know Me
-                            </span>
-
-                            <i class="bi bi-arrow-down"></i>
-
-                        </a>
-
-                    </div>
-<div
-                        class="hero-meta reveal"
-                        data-delay="750"
-                    >
-
-                        <div class="hero-meta-item">
-
-                            <span class="meta-number">
-                                01
-                            </span>
-
-                            <span
-                                class="meta-text"
-                                data-i18n="hero.web"
-                            >
-                                WEB DEVELOPMENT
-                            </span>
-
+        </header>
+        <main>
+            <section class="hero" id="home">
+                <div class="hero-grid"></div>
+                <div class="hero-glow hero-glow-one"></div>
+                <div class="hero-glow hero-glow-two"></div>
+                <div class="container hero-content">
+                    <div class="hero-text">
+                        <div class="hero-label reveal" data-delay="100">
+                            <span class="status-dot"></span>
+                            <span data-i18n="hero.label">BUILDING WITH CODE &amp; CREATIVITY</span>
                         </div>
-
-                        <div class="meta-divider"></div>
-
-                        <div class="hero-meta-item">
-
-                            <span class="meta-number">
-                                02
-                            </span>
-
-                            <span
-                                class="meta-text"
-                                data-i18n="hero.design"
-                            >
-                                GRAPHIC DESIGN
-                            </span>
-
-                        </div>
-
-                    </div>
-
-                </div>
-<div
-                    class="hero-visual reveal"
-                    data-delay="350"
-                >
-
-                    <div class="visual-orbit orbit-one"></div>
-                    <div class="visual-orbit orbit-two"></div>
-
-                    <div
-                        class="image-wrapper"
-                        data-parallax
-                    >
-
-                        <div class="image-backdrop"></div>
-
-                        <div class="image-placeholder">
-
-                            <img
-                                src="assets/img/hero.jpg"
-                                alt="Bagas Sandrianto"
-                            >
-
-                            <div class="image-overlay"></div>
-
-                        </div>
-<div class="visual-number">
-                            <span>01</span>
-                        </div>
-<div class="visual-tag">
-
-                            <span class="tag-number">
-                                01
-                            </span>
-
-                            <span
-                                class="tag-title"
-                                data-i18n="hero.visualTag"
-                            >
-                                WEB & DESIGN
-                            </span>
-
-                        </div>
-<div class="visual-plus">
-                            <i class="bi bi-plus-lg"></i>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-<a
-                href="#about"
-                class="scroll-indicator"
-            >
-
-                <span data-i18n="hero.scroll">
-                    Scroll to explore
-                </span>
-
-                <span class="scroll-line"></span>
-
-                <i class="bi bi-arrow-down scroll-arrow"></i>
-
-            </a>
-
-        </section>
-<section
-            class="about section"
-            id="about"
-        >
-
-            <div class="container">
-<div class="section-heading reveal">
-
-                    <span class="section-number">
-                        01
-                    </span>
-
-                    <span
-                        class="section-title"
-                        data-i18n="about.section"
-                    >
-                        About Me
-                    </span>
-
-                </div>
-<div class="about-content">
-<div class="about-main reveal">
-
-                        <h2>
-
-                            <span data-i18n="about.heading">
-                                Turning ideas into
-                            </span>
-
-                            <span data-i18n="about.headingHighlight">
-                                digital experiences.
-                            </span>
-
+                        <h1 class="hero-title">
+                            <span class="title-line typing-line reveal" data-delay="200"><span id="typing-text" data-i18n="hero.title"></span><span class="typing-cursor">|</span></span>
+                        </h1>
+                        <h2 class="hero-subtitle reveal" data-delay="450">
+                            <span data-i18n="hero.subtitle">Informatics Student</span>
+                            <br>
+                            <strong data-i18n="hero.subtitleStrong">&amp; Web Developer.</strong>
                         </h2>
-
-                    </div>
-<div
-                        class="about-description reveal"
-                        data-delay="150"
-                    >
-
-                        <p data-i18n="about.paragraph1">
-                            I'm a 21-year-old Informatics student at
-                            Universitas Nahdlatul Ulama Sunan Giri
-                            Bojonegoro, currently in my 7th semester.
-                        </p>
-
-                        <p data-i18n="about.paragraph2">
-                            I have a strong interest in web development,
-                            graphic design, and digital technology. I enjoy
-                            turning ideas into functional websites and
-                            creating visual designs that are both simple
-                            and engaging.
-                        </p>
-
-                        <p data-i18n="about.paragraph3">
-                            Through academic projects, personal projects,
-                            and real-world experience, I'm continuously
-                            learning and improving my skills while exploring
-                            new technologies and creative possibilities.
-                        </p>
-
-                        <a
-                            href="#contact"
-                            class="text-link"
-                        >
-
-                            <span data-i18n="about.more">
-                                More about me
-                            </span>
-
-                            <i class="bi bi-arrow-up-right"></i>
-
-                        </a>
-
-                    </div>
-
-                </div>
-<div class="about-cards">
-<article
-                        class="about-card reveal"
-                        data-delay="100"
-                    >
-
-                        <span class="card-number">
-                            01
-                        </span>
-
-                        <div class="card-icon">
-                            <i class="bi bi-code-slash"></i>
+                        <p class="hero-description reveal" data-delay="550" data-i18n="hero.description">I enjoy building websites, exploring technology, and turning ideas into meaningful digital experiences through code and design.</p>
+                        <div class="hero-actions reveal" data-delay="650">
+                            <a href="#work" class="btn btn-primary magnetic"><span data-i18n="hero.viewWork">View My Work</span><i class="bi bi-arrow-up-right btn-arrow"></i></a>
+                            <a href="#about" class="btn btn-secondary magnetic"><span data-i18n="hero.aboutMe">Get to Know Me</span><i class="bi bi-arrow-down"></i></a>
                         </div>
-
-                        <h3 data-i18n="about.web.title">
-                            Web Development
-                        </h3>
-
-                        <p data-i18n="about.web.description">
-                            Developing responsive and functional websites
-                            with a focus on clean, practical, and
-                            user-friendly experiences.
-                        </p>
-
-                    </article>
-<article
-                        class="about-card reveal"
-                        data-delay="200"
-                    >
-
-                        <span class="card-number">
-                            02
-                        </span>
-
-                        <div class="card-icon">
-                            <i class="bi bi-palette"></i>
+                        <div class="hero-meta reveal" data-delay="750">
+                            <div class="hero-meta-item">
+                                <span class="meta-number">01</span>
+                                <span class="meta-text" data-i18n="hero.web">WEB DEVELOPMENT</span>
+                            </div>
+                            <div class="meta-divider"></div>
+                            <div class="hero-meta-item">
+                                <span class="meta-number">02</span>
+                                <span class="meta-text" data-i18n="hero.design">GRAPHIC DESIGN</span>
+                            </div>
                         </div>
-
-                        <h3 data-i18n="about.design.title">
-                            Graphic Design
-                        </h3>
-
-                        <p data-i18n="about.design.description">
-                            Creating visual content, layouts, and digital
-                            designs that communicate ideas through
-                            composition, creativity, and visual identity.
-                        </p>
-
-                    </article>
-<article
-                        class="about-card reveal"
-                        data-delay="300"
-                    >
-
-                        <span class="card-number">
-                            03
-                        </span>
-
-                        <div class="card-icon">
-                            <i class="bi bi-stars"></i>
+                    </div>
+                    <div class="hero-visual reveal" data-delay="350">
+                        <div class="visual-orbit orbit-one"></div>
+                        <div class="visual-orbit orbit-two"></div>
+                        <div class="image-wrapper" data-parallax>
+                            <div class="image-backdrop"></div>
+                            <div class="image-placeholder">
+                                <img src="assets/img/hero.jpg" alt="Bagas Sandrianto">
+                                <div class="image-overlay"></div>
+                            </div>
+                            <div class="visual-number">
+                                <span>01</span>
+                            </div>
+                            <div class="visual-tag">
+                                <span class="tag-number">01</span>
+                                <span class="tag-title" data-i18n="hero.visualTag">WEB &amp; DESIGN</span>
+                            </div>
+                            <div class="visual-plus">
+                                <i class="bi bi-plus-lg"></i>
+                            </div>
                         </div>
-
-                        <h3 data-i18n="about.learning.title">
-                            Continuous Learning
-                        </h3>
-
-                        <p data-i18n="about.learning.description">
-                            Continuously exploring new technologies,
-                            improving technical skills, and learning
-                            through academic and real-world projects.
-                        </p>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-<section
-            class="work section"
-            id="work"
-        >
-
-            <div class="container">
-<div class="section-top reveal">
-
-                    <div class="section-heading">
-
-                        <span class="section-number">
-                            02
-                        </span>
-
-                        <span
-                            class="section-title"
-                            data-i18n="work.section"
-                        >
-                            Selected Work
-                        </span>
-
                     </div>
-
-                    <p
-                        class="section-intro"
-                        data-i18n="work.intro"
-                    >
-                        A collection of things I've built,
-                        designed, and explored.
-                    </p>
-
                 </div>
-<div class="work-grid">
-    <article
-        class="work-card work-card-large reveal"
-        data-delay="100"
-    >
-        <div class="work-image">
-            <img
-                src="assets/img/siakad.png"
-                alt="SIAKAD — Sistem Informasi Akademik"
-                loading="lazy"
-            >
-    
-            <div class="work-overlay"></div>
-    
-            <a
-                href="https://siakad.allathifiyyah.com"
-                class="work-image-icon"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Open SIAKAD project"
-            >
-                <i class="bi bi-arrow-up-right"></i>
-            </a>
-        </div>
-    
-        <div class="work-info">
-            <div>
-                <span
-                    class="work-category"
-                    data-i18n="work.siakad.category"
-                >
-                    WEB DEVELOPMENT
-                </span>
-    
-                <h3 data-i18n="work.siakad.title">
-                    Sistem Informasi Akademik
-                </h3>
-            </div>
-    
-            <a
-                href="https://siakad.allathifiyyah.com"
-                class="work-arrow"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Open SIAKAD project"
-            >
-                <i class="bi bi-arrow-up-right"></i>
-            </a>
-        </div>
-    </article>
-    
-    
-    <article
-        class="work-card reveal"
-        data-delay="200"
-    >
-        <div class="work-image">
-            <img
-                src="assets/img/ziscare.png"
-                alt="ZISCare - Sistem Transparansi ZIS"
-                loading="lazy"
-            >
-    
-            <div class="work-overlay"></div>
-    
-            <a
-                href="https://untitled-icing-zit.ngrok-free.dev/zizcare/"
-                class="work-image-icon"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Open ZISCare project"
-            >
-                <i class="bi bi-arrow-up-right"></i>
-            </a>
-        </div>
-    
-        <div class="work-info">
-            <div>
-                <span
-                    class="work-category"
-                    data-i18n="work.psb.category"
-                >
-                    WEB DEVELOPMENT
-                </span>
-    
-                <h3 data-i18n="work.psb.title">
-                    Sistem Transparansi ZIS
-                </h3>
-            </div>
-    
-            <a
-                href="https://untitled-icing-zit.ngrok-free.dev/zizcare/"
-                class="work-arrow"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Open ZISCare project"
-            >
-                <i class="bi bi-arrow-up-right"></i>
-            </a>
-        </div>
-    </article>
-    
-    
-    <article
-        class="work-card reveal"
-        data-delay="300"
-    >
-        <div class="work-image">
-            <img
-                src="assets/img/design.png"
-                alt="Graphic Design — Poster and Social Media"
-                loading="lazy"
-            >
-    
-            <div class="work-overlay"></div>
-    
-            <a
-                href="#"
-                class="work-image-icon"
-                aria-label="Open graphic design project"
-            >
-                <i class="bi bi-arrow-up-right"></i>
-            </a>
-        </div>
-    
-        <div class="work-info">
-            <div>
-                <span
-                    class="work-category"
-                    data-i18n="work.design.category"
-                >
-                    GRAPHIC DESIGN
-                </span>
-    
-                <h3 data-i18n="work.design.title">
-                    Poster & Social Media
-                </h3>
-            </div>
-    
-            <span class="work-arrow">
-                <i class="bi bi-arrow-up-right"></i>
-            </span>
-        </div>
-    </article>    
-
-                </div>
-<div
-                    class="work-more reveal"
-                    data-delay="400"
-                >
-
-                    <a
-                        href="#"
-                        class="text-link"
-                    >
-
-                        <span data-i18n="work.more">
-                            Explore all projects
-                        </span>
-
-                        <i class="bi bi-arrow-up-right"></i>
-
-                    </a>
-
-                </div>
-
-            </div>
-
-        </section>
-<section
-            class="contact section"
-            id="contact"
-        >
-
-            <div class="container">
-
-                <div class="contact-wrapper">
-<div class="section-heading reveal">
-
-                        <span class="section-number">
-                            03
-                        </span>
-
-                        <span
-                            class="section-title"
-                            data-i18n="contact.section"
-                        >
-                            Contact
-                        </span>
-
+                <a href="#about" class="scroll-indicator"><span data-i18n="hero.scroll">Scroll to explore</span><span class="scroll-line"></span><i class="bi bi-arrow-down scroll-arrow"></i></a>
+            </section>
+            <section class="about section" id="about">
+                <div class="container">
+                    <div class="section-heading reveal">
+                        <span class="section-number">01</span>
+                        <span class="section-title" data-i18n="about.section">About Me</span>
                     </div>
-<div class="contact-content">
-
-                        <p
-                            class="contact-small reveal"
-                            data-i18n="contact.small"
-                        >
-                            HAVE AN IDEA OR JUST WANT TO SAY HI?
-                        </p>
-
-                        <h2
-                            class="reveal"
-                            data-delay="100"
-                        >
-
-                            <span data-i18n="contact.heading">
-                                Let's build something
-                            </span>
-
-                            <span data-i18n="contact.headingHighlight">
-                                meaningful.
-                            </span>
-
-                        </h2>
-<a
-                            href="mailto:sandriantosiregar07@gmail.com"
-                            class="contact-email reveal magnetic"
-                            data-delay="200"
-                        >
-
-                            <span>
-                                sandriantosiregar07@gmail.com
-                            </span>
-
-                            <i class="bi bi-arrow-up-right"></i>
-
-                        </a>
-<div
-                            class="social-links reveal"
-                            data-delay="300"
-                        >
-<a
-                                href="https://www.instagram.com/saans.ajaaa/"
-                                class="social-link"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                aria-label="Instagram"
-                            >
-
-                                <i class="bi bi-instagram"></i>
-
-                                <span>
-                                    Instagram
-                                </span>
-
-                            </a>
-<a
-                                href="https://github.com/sandrianto07"
-                                class="social-link"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                aria-label="GitHub"
-                            >
-
-                                <i class="bi bi-github"></i>
-
-                                <span>
-                                    GitHub
-                                </span>
-
-                            </a>
-<a
-                                href="https://www.linkedin.com/in/bagas-sandrianto-5a135643b/"
-                                class="social-link"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                aria-label="LinkedIn"
-                            >
-
-                                <i class="bi bi-linkedin"></i>
-
-                                <span>
-                                    LinkedIn
-                                </span>
-
-                            </a>
-
+                    <div class="about-content">
+                        <div class="about-main reveal">
+                            <h2>
+                                <span data-i18n="about.heading">Turning ideas into</span>
+                                <span data-i18n="about.headingHighlight">digital experiences.</span>
+                            </h2>
                         </div>
-
+                        <div class="about-description reveal" data-delay="150">
+                            <p data-i18n="about.paragraph1">I'm a 21-year-old Informatics student at Universitas Nahdlatul Ulama Sunan Giri Bojonegoro, currently in my 7th semester.</p>
+                            <p data-i18n="about.paragraph2">I have a strong interest in web development, graphic design, and digital technology. I enjoy turning ideas into functional websites and creating visual designs that are both simple and engaging.</p>
+                            <p data-i18n="about.paragraph3">Through academic projects, personal projects, and real-world experience, I'm continuously learning and improving my skills while exploring new technologies and creative possibilities.</p>
+                            <a href="#contact" class="text-link"><span data-i18n="about.more">More about me</span><i class="bi bi-arrow-up-right"></i></a>
+                        </div>
                     </div>
-
+                    <div class="about-cards">
+                        <article class="about-card reveal" data-delay="100">
+                            <span class="card-number">01</span>
+                            <div class="card-icon">
+                                <i class="bi bi-code-slash"></i>
+                            </div>
+                            <h3 data-i18n="about.web.title">Web Development</h3>
+                            <p data-i18n="about.web.description">Developing responsive and functional websites with a focus on clean, practical, and user-friendly experiences.</p>
+                        </article>
+                        <article class="about-card reveal" data-delay="200">
+                            <span class="card-number">02</span>
+                            <div class="card-icon">
+                                <i class="bi bi-palette"></i>
+                            </div>
+                            <h3 data-i18n="about.design.title">Graphic Design</h3>
+                            <p data-i18n="about.design.description">Creating visual content, layouts, and digital designs that communicate ideas through composition, creativity, and visual identity.</p>
+                        </article>
+                        <article class="about-card reveal" data-delay="300">
+                            <span class="card-number">03</span>
+                            <div class="card-icon">
+                                <i class="bi bi-stars"></i>
+                            </div>
+                            <h3 data-i18n="about.learning.title">Continuous Learning</h3>
+                            <p data-i18n="about.learning.description">Continuously exploring new technologies, improving technical skills, and learning through academic and real-world projects.</p>
+                        </article>
+                    </div>
+                    <div class="tools-section reveal" data-delay="200">
+                        <div class="section-heading">
+                            <span class="section-number">02</span>
+                            <span class="section-title" data-i18n="tools.section">Tech Stack &amp; Tools</span>
+                        </div>
+                        <p class="section-intro" data-i18n="tools.intro">Technologies and tools I use to build, design, and develop digital experiences.</p>
+                        <div class="tools-grid">
+                            <div class="tool-item">
+                                <img src="assets/img/tools/vscode.png" alt="VS Code" width="32" height="32" loading="lazy">
+                                <span>VS Code</span>
+                            </div>
+                            <div class="tool-item">
+                                <img src="assets/img/tools/html.png" alt="HTML5" width="32" height="32" loading="lazy">
+                                <span>HTML5</span>
+                            </div>
+                            <div class="tool-item">
+                                <img src="assets/img/tools/css.png" alt="CSS3" width="32" height="32" loading="lazy">
+                                <span>CSS3</span>
+                            </div>
+                            <div class="tool-item">
+                                <img src="assets/img/tools/js.png" alt="JavaScript" width="32" height="32" loading="lazy">
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="tool-item">
+                                <img src="assets/img/tools/php.png" alt="PHP" width="32" height="32" loading="lazy">
+                                <span>PHP</span>
+                            </div>
+                            <div class="tool-item">
+                                <img src="assets/img/tools/mysql.png" alt="MySQL" width="32" height="32" loading="lazy">
+                                <span>MySQL</span>
+                            </div>
+                            <div class="tool-item">
+                                <img src="assets/img/tools/xampp.png" alt="XAMPP" width="32" height="32" loading="lazy">
+                                <span>XAMPP</span>
+                            </div>
+                            <div class="tool-item">
+                                <img src="assets/img/tools/py.png" alt="Python" width="32" height="32" loading="lazy">
+                                <span>Python</span>
+                            </div>
+                            <div class="tool-item">
+                                <img src="assets/img/tools/bootstrap.png" alt="Bootstrap" width="32" height="32" loading="lazy">
+                                <span>Bootstrap</span>
+                            </div>
+                            <div class="tool-item">
+                                <img src="assets/img/tools/tailwind.png" alt="Tailwind CSS" width="32" height="32" loading="lazy">
+                                <span>Tailwind CSS</span>
+                            </div>
+                            <div class="tool-item">
+                                <img src="assets/img/tools/ci.png" alt="CodeIgniter 3" width="32" height="32" loading="lazy">
+                                <span>CodeIgniter 3</span>
+                            </div>
+                            <div class="tool-item">
+                                <img src="assets/img/tools/git.png" alt="Git" width="32" height="32" loading="lazy">
+                                <span>Git</span>
+                            </div>
+                            <div class="tool-item">
+                                <img src="assets/img/tools/github.png" alt="GitHub" width="32" height="32" loading="lazy">
+                                <span>GitHub</span>
+                            </div>
+                            <div class="tool-item">
+                                <img src="assets/img/tools/vercel.svg" alt="Vercel" width="32" height="32" loading="lazy">
+                                <span>Vercel</span>
+                            </div>
+                            <div class="tool-item">
+                                <img src="assets/img/tools/gpt.png" alt="ChatGPT" width="32" height="32" loading="lazy">
+                                <span>ChatGPT</span>
+                            </div>
+                            <div class="tool-item">
+                                <img src="assets/img/tools/claude.webp" alt="Claude" width="32" height="32" loading="lazy">
+                                <span>Claude</span>
+                            </div>
+                            <div class="tool-item">
+                                <img src="assets/img/tools/flutter.png" alt="Flutter" width="32" height="32" loading="lazy">
+                                <span>Flutter</span>
+                            </div>
+                            <div class="tool-item">
+                                <img src="assets/img/tools/firebase.webp" alt="Firebase" width="32" height="32" loading="lazy">
+                                <span>Firebase</span>
+                            </div>
+                            <div class="tool-item">
+                                <img src="assets/img/tools/canva.png" alt="Canva" width="32" height="32" loading="lazy">
+                                <span>Canva</span>
+                            </div>
+                            <div class="tool-item">
+                                <img src="assets/img/tools/postman.webp" alt="Postman" width="32" height="32" loading="lazy">
+                                <span>Postman</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
+            </section>
+            <section class="work section" id="work">
+                <div class="container">
+                    <div class="section-top reveal">
+                        <div class="section-heading">
+                            <span class="section-number">03</span>
+                            <span class="section-title" data-i18n="work.section">Selected Work</span>
+                        </div>
+                        <p class="section-intro" data-i18n="work.intro">A collection of things I've built, designed, and explored.</p>
+                    </div>
+                    <div class="work-grid">
+                        <article class="work-card work-card-large reveal" data-delay="100">
+                            <div class="work-image">
+                                <img src="assets/img/siakad.png" alt="SIAKAD — Sistem Informasi Akademik" loading="lazy">
+                                <div class="work-overlay"></div>
+                                <a href="https://siakad.allathifiyyah.com" class="work-image-icon" target="_blank" rel="noopener noreferrer" aria-label="Open SIAKAD project"><i class="bi bi-arrow-up-right"></i></a>
+                            </div>
+                            <div class="work-info">
+                                <div>
+                                    <span class="work-category" data-i18n="work.siakad.category">WEB DEVELOPMENT</span>
+                                    <h3 data-i18n="work.siakad.title">Sistem Informasi Akademik</h3>
+                                </div>
+                                <a href="https://siakad.allathifiyyah.com" class="work-arrow" target="_blank" rel="noopener noreferrer" aria-label="Open SIAKAD project"><i class="bi bi-arrow-up-right"></i></a>
+                            </div>
+                        </article>
+                        <article class="work-card reveal" data-delay="200">
+                            <div class="work-image">
+                                <img src="assets/img/ziscare.png" alt="ZISCare - Sistem Transparansi ZIS" loading="lazy">
+                                <div class="work-overlay"></div>
+                                <a href="https://untitled-icing-zit.ngrok-free.dev/zizcare/" class="work-image-icon" target="_blank" rel="noopener noreferrer" aria-label="Open ZISCare project"><i class="bi bi-arrow-up-right"></i></a>
+                            </div>
+                            <div class="work-info">
+                                <div>
+                                    <span class="work-category" data-i18n="work.psb.category">WEB DEVELOPMENT</span>
+                                    <h3 data-i18n="work.psb.title">Sistem Transparansi ZIS</h3>
+                                </div>
+                                <a href="https://untitled-icing-zit.ngrok-free.dev/zizcare/" class="work-arrow" target="_blank" rel="noopener noreferrer" aria-label="Open ZISCare project"><i class="bi bi-arrow-up-right"></i></a>
+                            </div>
+                        </article>
+                        <article class="work-card reveal" data-delay="300">
+                            <div class="work-image">
+                                <img src="assets/img/design.png" alt="Graphic Design — Poster and Social Media" loading="lazy">
+                                <div class="work-overlay"></div>
+                                <a href="#" class="work-image-icon" aria-label="Open graphic design project"><i class="bi bi-arrow-up-right"></i></a>
+                            </div>
+                            <div class="work-info">
+                                <div>
+                                    <span class="work-category" data-i18n="work.design.category">GRAPHIC DESIGN</span>
+                                    <h3 data-i18n="work.design.title">Poster &amp; Social Media</h3>
+                                </div>
+                                <span class="work-arrow"><i class="bi bi-arrow-up-right"></i></span>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="work-more reveal" data-delay="400">
+                        <a href="#" class="text-link"><span data-i18n="work.more">Explore all projects</span><i class="bi bi-arrow-up-right"></i></a>
+                    </div>
+                </div>
+            </section>
+            <section class="contact section" id="contact">
+                <div class="container">
+                    <div class="contact-wrapper">
+                        <div class="section-heading reveal">
+                            <span class="section-number">04</span>
+                            <span class="section-title" data-i18n="contact.section">Contact</span>
+                        </div>
+                        <div class="contact-content">
+                            <p class="contact-small reveal" data-i18n="contact.small">HAVE AN IDEA OR JUST WANT TO SAY HI?</p>
+                            <h2 class="reveal" data-delay="100">
+                                <span data-i18n="contact.heading">Let's build something</span>
+                                <span data-i18n="contact.headingHighlight">meaningful.</span>
+                            </h2>
+                            <a href="mailto:sandriantosiregar07@gmail.com" class="contact-email reveal magnetic" data-delay="200"><span>sandriantosiregar07@gmail.com</span><i class="bi bi-arrow-up-right"></i></a>
+                            <div class="social-links reveal" data-delay="300">
+                                <a href="https://www.instagram.com/saans.ajaaa/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="bi bi-instagram"></i><span>Instagram</span></a>
+                                <a href="https://github.com/sandrianto07" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="bi bi-github"></i><span>GitHub</span></a>
+                                <a href="https://www.linkedin.com/in/bagas-sandrianto-5a135643b/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin"></i><span>LinkedIn</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container footer-inner">
+                <div class="footer-logo">
+                    SANDRONN
+                    <span>.</span>
+                </div>
+                <span>© 2026 Bagas Sandrianto Siregar</span>
+                <span data-i18n="footer.text">Designed &amp; Built with code &amp; creativity.</span>
             </div>
-
-        </section>
-
-    </main>
-<footer class="footer">
-
-        <div class="container footer-inner">
-
-            <div class="footer-logo">
-                SANDRONN<span>.</span>
-            </div>
-
-            <span>
-                © 2026 Bagas Sandrianto Siregar
-            </span>
-
-            <span data-i18n="footer.text">
-                Designed & Built with code & creativity.
-            </span>
-
-        </div>
-
-    </footer>
-<button
-        class="back-to-top"
-        id="backToTop"
-        type="button"
-        aria-label="Back to top"
-    >
-
-        <i class="bi bi-arrow-up"></i>
-
-    </button>
-<script src="assets/js/script.js"></script>
-
-    <script src="assets/js/language.js"></script>
-
-</body>
-
+        </footer>
+        <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+        <script src="assets/js/script.js"></script>
+        <script src="assets/js/language.js"></script>
+    </body>
 </html>
